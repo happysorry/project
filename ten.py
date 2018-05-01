@@ -55,7 +55,8 @@ def init(lst):
 def addfire(classify):
     global a,b,c,e,d,f,g,h,ii,jj,k,l,m,n,o,p
     data = {'證券代號': a, '證券名稱': b, '成交股數': c,'成交筆數':d,'成交金額':e,'開盤價':f,'最高價':g,'最低價':h,'收盤價':ii,'漲跌':jj,'漲跌價差':k,'最後揭示買價':l,'最後揭示買量':m,'最後揭示賣價':n,'最後揭示賣量':o,'本益比':p}
-    string="/{0}/{1}".format(str(classify),str(a))
+    st=str(b)+" "+str(a);
+    string="/{0}/{1}".format(str(classify),st)
     print(string,data)
     fb.post(string,data)
     
