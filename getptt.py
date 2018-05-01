@@ -78,7 +78,7 @@ if __name__ == '__main__':
     deletenews()
     getnews(url)
     getpage(url)
-    while len(titles)<10:
+    while len(titles)<20:
         getnews(page[1])
         getpage(page[1])
         

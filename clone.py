@@ -9,6 +9,7 @@ import requests
 import time
 from firebase import firebase
 import matplotlib.pyplot as plt
+import sched
 
 
 
@@ -119,10 +120,13 @@ def picturez():
     plt.plot(data2)
     plt.show()
     
-    
-deletetoday()   
-addfire()
-addz()
+if __name__ == '__main__':   
+    while True:
+        time.sleep(30)
+        deletetoday()
+        addfire()
+        
+'''
 getz()
 picturez()
-
+'''
